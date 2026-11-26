@@ -17,7 +17,7 @@ Works in **Claude** (web/desktop) and **ChatGPT**:
 1. **Connect Function Health**
    - In Claude: `Settings → Connectors → Browse Connectors → Function Health` (or custom connector URL `https://services.functionhealth.com/ai-chat/mcp`).
    - In ChatGPT: link Function Health in `Settings → Apps & Connectors` (or Health).
-2. **Connect fuelOS** (read-only over OAuth 2.1 + PKCE)
+2. **Connect fuelOS** (OAuth 2.1 + PKCE; read + non-deleting logging, never deletes records)
    - Search **fuelOS** in the directory, or add custom connector URL:
      ```text
      https://api.fuelos.site/mcp
@@ -34,6 +34,8 @@ Works in **Claude** (web/desktop) and **ChatGPT**:
 ---
 
 ## The 6 Prompts
+
+These 6 workflows are also registered natively as MCP prompts on the fuelOS server, so MCP clients that support prompts can invoke them directly without copy-pasting.
 
 | # | Prompt | What it compares | File |
 |---|---|---|---|

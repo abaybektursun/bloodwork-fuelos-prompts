@@ -14,7 +14,7 @@ You have access to two sources of my personal records:
 Before writing any interpretation, call the fuelOS tools first:
 - `get_profile` and `get_goals`
 - `list_stack` (to see my active and paused supplements/medications)
-- `get_nutrient_trends` over the last 30 days (ask me for my UTC offset if you do not know it; otherwise state the offset you used) for the nutrients relevant to my flagged/borderline markers—such as vitaminD, iron, vitaminB12, folate, magnesium, zinc, fiber, saturatedFat, sugar, sodium, potassium, and protein.
+- `get_nutrient_trends` over the last 30 days (ask me for my UTC offset if you do not know it; otherwise state the offset you used), passing all nutrients relevant to my flagged/borderline markers in one `nutrients: [...]` call—such as vitaminD, iron, vitaminB12, folate, magnesium, zinc, fiber, saturatedFat, sugar, sodium, potassium, and protein.
 - Never pull dietary nutrients from `get_health_metrics` (avoid double-counting and unit mismatches; `get_nutrient_trends` reports canonical units like `sodium_mg`).
 
 Output structure:
